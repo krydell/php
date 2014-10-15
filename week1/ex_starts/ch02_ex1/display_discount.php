@@ -13,7 +13,7 @@
         <span><?php echo $product_description; ?></span><br />
 
         <label>List Price:</label>
-        <span><?php echo $list_price_formatted; ?></span><br />
+        <span><?php echo $list_price_formatted ?></span><br />
 
         <label>Standard Discount:</label>
         <span><?php echo $discount_percent_formatted; ?></span><br />
