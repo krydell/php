@@ -10,7 +10,7 @@
         <h1>This page is under construction</h1>
 
         <label>Product Description:</label>
-        <span><?php echo $product_description ?></span><br />
+        <span><?php echo $product_description; ?></span><br />
 
         <label>List Price:</label>
         <span><?php echo $list_price_formatted; ?></span><br />
