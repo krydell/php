@@ -75,7 +75,7 @@
         <br/><br/>
         <label>This calculation was done on:</label>
         <span><?php echo date('m/d/Y H:i:s'); ?></span>
-        </br><br/>
+        </br><br/> 
         <label>Start over?</label>
         <span><a href="index.php">Click here</a></span>
     </div>

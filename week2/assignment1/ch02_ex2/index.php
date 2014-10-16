@@ -1,7 +1,7 @@
 <?php
 
     if ( empty($_POST) ) {
-        $investment = rand(1,100);
+        $investment = rand(1,100); // set random defaults
         $interest_rate = rand(1,10);
         $years = rand(1,50);
     }
