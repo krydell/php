@@ -74,7 +74,10 @@
         <span><?php echo $future_value_f; ?></span><br />
         <br/><br/>
         <label>This calculation was done on:</label>
-        <span><?php echo date('m/d/Y'); ?></span>
+        <span><?php echo date('m/d/Y H:i:s'); ?></span>
+        </br><br/>
+        <label>Start over?</label>
+        <span><a href="index.php">Click here</a></span>
     </div>
    
 </body>
