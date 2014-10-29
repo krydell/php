@@ -10,7 +10,7 @@
               ORDER BY id';
     $person = $db->query($query);
 
-?>
+?> 
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -26,7 +26,7 @@ and open the template in the editor.
    <h2>Current Data</h2>
      <table>
         <tr>
-            <th>Row</th>
+            <th>Row</th> 
             <th>Name</th>
             <th>E-mail</th>
             <th>Phone</th>

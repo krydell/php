@@ -37,13 +37,13 @@ and open the template in the editor.
                 <input type="input" name="name" value="<?php echo $row['name']; ?>"  />
                 <br/>
                 <label>Phone:</label>
-                <input type="input" name="phone" value="<?php echo $row['phone']; ?>"  />              
+                <input type="input" name="phone" value="<?php echo $row['phone']; ?>" maxlength="10" />              
                 <br/>
                 <label>E-mail:</label>
                 <input type="input" name="email" value="<?php echo $row['email']; ?>"  />
                 <br/>
                 <label>Zip:</label>
-                <input type="input" name="zip" value="<?php echo $row['zip']; ?>"  />
+                <input type="input" name="zip" value="<?php echo $row['zip']; ?>" maxlength="5" />
                 <br/>
                 <?php endforeach; ?>
                  
