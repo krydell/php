@@ -10,7 +10,10 @@
 <!-- the body section -->
 <body>
         <h3>Error</h3>
-        <p><?php echo $error; ?></p>
+        <p><?php
+        $error1 = print_r($error);
+        echo($error1);
+        ?></p>
         <p><a href="index.php">Go back</a>.
         
 

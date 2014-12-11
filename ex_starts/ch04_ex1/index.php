@@ -78,7 +78,7 @@
                     <td><?php echo $product['productCode']; ?></td>
                     <td><?php echo $product['productName']; ?></td>
                     <td class="right"><?php echo $product['listPrice']; ?></td>
-                    <td><form action="delete_product.php" method="post"
+                    <td><form action="delete.php" method="post"
                               id="delete_product_form">
                         <input type="hidden" name="product_id"
                                value="<?php echo $product['productID']; ?>" />

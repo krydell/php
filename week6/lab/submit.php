@@ -1,8 +1,6 @@
 <?php
-
 if(isset($_POST['email'])){ $email = $_POST['email']; } // take all the inputted fields
 if(isset($_POST['password'])){ $pw = $_POST['password']; }
-
 if ( empty($email) ||  empty($pw)) { // error checking
     $error = "Do not leave either field blank.";
     include('error.php'); return;}

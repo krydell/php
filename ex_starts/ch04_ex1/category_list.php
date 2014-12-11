@@ -1,4 +1,6 @@
 <?php
+
+$category_id = $_POST['category_id'];
     require_once('database.php');
     
     // Get category ID
