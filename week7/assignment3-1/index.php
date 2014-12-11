@@ -8,7 +8,7 @@
     </head>
     <body>
  
-    <h2>Assignment 3 - 1 - Log In</h2>
+    <h2>Assignment 3 - 1: Log In</h2>
     
            <form action="submit.php" method="post"
                   id="add_category_form">
