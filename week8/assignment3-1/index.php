@@ -1,3 +1,12 @@
+<?php
+
+if (!empty($_GET['logout'])) {
+    unset($_SESSION['loggedin']); include 'index.php'; 
+}
+
+?>
+
+
 
 <!DOCTYPE html>
 
