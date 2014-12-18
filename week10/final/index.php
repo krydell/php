@@ -11,7 +11,7 @@ if(isset($_POST['phone'])){ $phone = $_POST['phone']; }
 else{$phone = "";}
 if(isset($_POST['contact'])){ $contact = $_POST['contact']; }
 else{$contact = "";}
-if(isset($_POST['heard'])){ $contact = $_POST['heard']; }
+if(isset($_POST['heard'])){ $heard = $_POST['heard']; }
 else{$heard = "";}
 if(isset($_POST['comments'])){ $comments = $_POST['comments']; }
 else{$comments = "";}
@@ -31,11 +31,7 @@ else{$comments = "";}
     <body>
          <div id="content">
             <h1>Account Sign Up</h1>
-            <span name="error"><?php
-            if(!empty($_POST['error'])) {
-                         echo $_POST["error"];
-                                  }
-                                    ?></span>
+
             <form action="submit.php" method="post">
 
             <fieldset>
@@ -52,18 +48,18 @@ else{$comments = "";}
             <legend>Settings</legend>
 
                 <p>How did you hear about us?</p>
-                <input type="radio" name="heard" value="Search Engine" />
+                <input type="radio" name="heard" value="Search Engine" checked="<?php if($heard=="Search Engine"){echo "true";}else{echo"false";} ?>" />
                 Search engine<br />
-                <input type="radio" name="heard" value="Friend" />
+                <input type="radio" name="heard" value="Friend" checked="<?php if($heard=="Friend"){echo "true";}else{echo"false";} ?>" />
                 Word of mouth<br />
-                <input type=radio name="heard" value="Other" />
+                <input type=radio name="heard" value="Other" checked="<?php if($heard=="Other"){echo "true";}else{echo"false";} ?>" />
                 Other<br />
 
                 <p>Contact via:</p>
-                <select name="contact" selected="<?php echo $contact ?>">
+                <select name="contact">
                         <option value="email">Email</option>
                         <option value="text">Text Message</option>
-                        <option value="phone">Phone</option>
+                        <option value="phone" >Phone</option>
                 </select>
 
                 <p>Comments: (optional)</p>

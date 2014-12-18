@@ -12,13 +12,12 @@ else{$heard = "";}
 if(isset($_POST['comments'])){ $comments = $_POST['comments']; }
 else{$comments = "";}
 
-if (strlen($phone)<7||strlen($phone)>10){
-    $error = "Phone must be valid.";}
+if (!is_numeric($phone) || strlen($phone)<7||strlen($phone)>10){
+    $error = "Phone must be a valid 7-10 digit number.";}
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $error = "E-mail must be valid.";}      
 if ( empty($email) ||  empty($contact) ||  empty($heard) ||  empty($phone)) { // error checking
     $error = "All fields except for comments are required."; }
- 
 
 if ( !empty($error) )
     
