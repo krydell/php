@@ -11,9 +11,9 @@
 <body>
         <h3>Error</h3>
         <p><?php
-        $error0 = implode(" <br/>",$error);
-        $error1 = print_r($error0);
-        echo($error1);
+            $error0 = implode("<br/>",$error);
+            $error1 = print_r($error0);
+            echo($error1);
         ?></p>
         <p><a href="index.php">Go back</a>.
         
