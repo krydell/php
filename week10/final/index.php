@@ -1,6 +1,6 @@
 <?php
 
-// Karley Vasile
+// Karley Vasile - PHP Final 12/17/2014
 
 
 if(isset($_POST['error'])){ $error = $_POST['error'];}
