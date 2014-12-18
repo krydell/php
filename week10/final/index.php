@@ -16,8 +16,7 @@ else{$heard = "";}
 if(isset($_POST['comments'])){ $comments = $_POST['comments']; }
 else{$comments = "";}
 
-
-
+$checkedText = 'checked="checked"';       
 
 ?>
 
@@ -48,18 +47,30 @@ else{$comments = "";}
             <legend>Settings</legend>
 
                 <p>How did you hear about us?</p>
-                <input type="radio" name="heard" value="Search Engine" checked="<?php if($heard=="Search Engine"){echo "true";}else{echo"false";} ?>" />
+                <input type="radio" name="heard" value="Search Engine" <?php if($heard=='Search Engine'){echo $checkedText;} ?> />
                 Search engine<br />
-                <input type="radio" name="heard" value="Friend" checked="<?php if($heard=="Friend"){echo "true";}else{echo"false";} ?>" />
+                <input type="radio" name="heard" value="Friend" <?php if($heard==='Friend'){echo $checkedText;} ?> />
                 Word of mouth<br />
-                <input type=radio name="heard" value="Other" checked="<?php if($heard=="Other"){echo "true";}else{echo"false";} ?>" />
+                <input type=radio name="heard" value="Other" <?php if($heard==='Other'){echo $checkedText;} ?> />
                 Other<br />
 
                 <p>Contact via:</p>
                 <select name="contact">
-                        <option value="email">Email</option>
-                        <option value="text">Text Message</option>
-                        <option value="phone" >Phone</option>
+                        <option value="email"            <?php
+                if ( $contact === 'email') {
+                    echo 'selected="selected"';
+                }
+            ?>>Email</option>
+                        <option value="text"            <?php
+                if ( $contact === 'text') {
+                    echo 'selected="selected"';
+                }
+            ?>>Text Message</option>
+                        <option value="phone"             <?php
+                if ( $contact === 'phone') {
+                    echo 'selected="selected"';
+                }
+            ?>>Phone</option>
                 </select>
 
                 <p>Comments: (optional)</p>
